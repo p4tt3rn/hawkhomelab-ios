@@ -9,10 +9,17 @@ import {
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Let's do this!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <View>
+        <Text>Let's do this</Text>
+        <Button
+          title="Button title"
+          color="#16A085"
+          onPress={() => Alert.alert("Alert")}
+        />
+        <StatusBar style="auto" />
+      </View>
+    </SafeAreaView>
   );
 }
 
